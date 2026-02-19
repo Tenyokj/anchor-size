@@ -1,4 +1,6 @@
-use anchor_size_core::{collect_all_structs, find_account_structs, size_of_type};
+mod core;
+
+use crate::core::{collect_all_structs, find_account_structs, size_of_type};
 use std::collections::HashMap;
 use std::io::{self, Write};
 use std::path::{Path, PathBuf};
@@ -27,8 +29,6 @@ struct AccountReport {
     recommended_size: usize,
     rent_sol: f64,
 }
-
-
 
 fn ask_number(question: &str) -> usize {
     print!("{}", question);
