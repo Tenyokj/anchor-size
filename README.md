@@ -3,6 +3,8 @@
 [![Crates.io](https://img.shields.io/crates/v/anchor-size)](https://crates.io/crates/anchor-size)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+[LOGO](asset.png)
+
 **Anchor Size** is a CLI tool for automatically calculating account sizes in Anchor (Solana).  
 No more manual `space = 8 + ...` calculations or worrying about account overflow.
 
